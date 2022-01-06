@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> LETITBE.txt </title>
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1> LETITBE.txt: an AI-powered lyricist </h1>
+
+    <h2> LETITBE.txt is an AI-powered lyric generator, which utilizes machine
+        learning insights from the Modzy Graph Embeddings to predict and 
+        generate realistic lyrics from The Beatles' full discography. 
+    </h2>
+
+    <div id=lyric_box>
+        <span id="title"> </span>
+        <div id=lyrics>
+
+
+        </div>
+
+    </div>
+
+    <h2> How it works: </h2>
+    <h3> 
+        LETITBE.txt's python scripts search genius.com, a lyric annotation
+        website, using the Genius API to retrieve URLs for every Beatles song.
+        (anthologies and collaborations excluded). Then, each song webpage's
+        HTML is scraped using BeautifulSoup4 to extract the plaintext lyrics.
+        <br>
+        After formatting out excess markup text, all song lyrics are then fed
+        through a word-processor algorithm to generate a "Markov Chain": a
+        sequential representation of existing word-to-word pairings as found
+        in the input lyric data. 
+
+        <span> Example Image of Markov Chain here. </span>
+
+        Markov Chains are powerful models for generating natural grammatical
+        sentences. Without an underlying ruleset for grammar and semantics,
+        they can create natural, understandable sentences that aren't
+        contained in the original dataset!
+
+        <span> Image showing Markov Chain generating a novel utterance </span>
+
+        However, Markov Chains are limited by their training data. They 
+        ultimately can't generate all possible grammatical sentences using
+        their input data words - see how no path exists for the sentence
+        below:
+
+        <span> Unreachable sentence </span>
+
+        Furthermore, they struggle to model long-distance dependencies and
+        avoid possible 'cycles' within the graph: 
+
+    </h3>
+
+</body>
+
+</html>
